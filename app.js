@@ -16,13 +16,13 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
   const inputInfo = req.body
   const searchResult = loginCheck(inputInfo)
-  const errorMessage = 'invaild email or password'
+  const errorMessage = 'invalid email or password'
   console.log(inputInfo)
   if (searchResult === undefined) {
-    res.render('index', {errorMessage, inputInfo}) 
+    res.render('index', { errorMessage, inputInfo })
   } else {
     const userName = searchResult.firstName
-    res.render('welcome', {userName})
+    res.render('welcome', { userName })
   }
 })
 

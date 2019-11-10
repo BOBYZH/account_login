@@ -34,7 +34,7 @@ npm run start
 
 ######
 2. 如果輸入的帳密如以上五組正確，會進入登入成功的歡迎畫面："Welcome back, (firstName)!"，右側則有"logout"選項可登出
-3. 如果帳密組合錯誤，會停留在本頁並跳出錯誤訊息："invaild email or password"，其中email會留在欄位方便改用其他密碼；另外，點標題"Account Login"可消除錯誤訊息
+3. 如果帳密組合錯誤，會停留在本頁並跳出錯誤訊息："invalid email or password"，其中email會留在欄位方便改用其他密碼；另外，點標題"Account Login"可消除錯誤訊息
 
 ## 預覽畫面：
 ![image](https://assets-lighthouse.s3.amazonaws.com/uploads/answer/cover/107006/account_login.png)
