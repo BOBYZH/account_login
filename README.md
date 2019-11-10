@@ -23,6 +23,7 @@ npm run start
 
 ## 使用方法：
 1. 在登入畫面輸入帳號(email)與密碼(password)，以下為測試用的「正確」使用者名稱與對應的帳密：
+
 | firstName  | email               | password         |
 | ---------- | ------------------- | ---------------- |
 | Tony       | tony@stark.com      | iamironman       |
@@ -30,10 +31,12 @@ npm run start
 | Peter      | peter@parker.com    | enajyram         |
 | Natasha    | natasha@gamil.com   | parol#@$!        |
 | Nick       | nick@shield.com     | password         |
+
+######
 2. 如果輸入的帳密如以上五組正確，會進入登入成功的歡迎畫面："Welcome back, (firstName)!"，右側則有"logout"選項可登出
 3. 如果帳密組合錯誤，會停留在本頁並跳出錯誤訊息："invaild email or password"，其中email會留在欄位方便改用其他密碼；另外，點標題"Account Login"可消除錯誤訊息
-######
 
+## 預覽畫面：
 ![image](https://assets-lighthouse.s3.amazonaws.com/uploads/answer/cover/107006/account_login.png)
 
 
