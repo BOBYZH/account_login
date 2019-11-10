@@ -1,6 +1,6 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
-const login = require('./login')
+const loginCheck = require('./loginCheck')
 const app = express()
 const port = 3000
 
@@ -14,8 +14,16 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-  const accountInfo = req.body
-  res.render('index', { email, password })
+  const inputInfo = req.body
+  const searchResult = loginCheck(inputInfo)
+  const errorMessage = 'invaild email or password'
+  console.log(inputInfo)
+  if (searchResult === undefined) {
+    res.render('index', {errorMessage, inputInfo}) 
+  } else {
+    const userName = searchResult.firstName
+    res.render('welcome', {userName})
+  }
 })
 
 app.listen(port, () => {
